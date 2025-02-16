@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalogue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 10;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4a460;
+            font-size: 18px;
+        }
+
+        .nav-header {
+            background-color: #fdd5b1;
+        }
+
+        .book-info {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .book-image {
+            width: 100px;
+            height: auto;
+        }
+
+        .cart-button img {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .book-image {
+                width: 80px;
+            }
+
+            .cart-button img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <table>
+            <!-- CSE Section -->
+            <tr>
+                <th colspan="2">Logo</th>
+                <th colspan="4">Web Site Name</th>
+            </tr>
+            <tr class="nav-header">
+                <th>Home</th>
+                <th>Login</th>
+                <th>Registration</th>
+                <th>Catalogue</th>
+                <th>Cart</th>
+            </tr>
+            <tr>
+                <td rowspan="2">CSE</td>
+                <td><img src="xml.jpeg" alt="XML Bible" class="book-image"></td>
+                <td class="book-info">
+                    <strong>Book:</strong> XML Bible<br>
+                    <strong>Author:</strong> Winston<br>
+                    <strong>Publication:</strong> Wiley
+                </td>
+                <td>$40.5</td>
+                <td class="cart-button">
+                    <img src="cart.png" alt="Add to cart">
+                </td>
+            </tr>
+
+            <!-- ECE Section -->
+               <tr>
+                <td><img src="ai.jpg" alt="AI Book" class="book-image"></td>
+                <td class="book-info">
+                    <strong>Book:</strong> AI<br>
+                    <strong>Author:</strong> S. Russl<br>
+                    <strong>Publication:</strong> Princetonhall
+                </td>
+                <td>$63</td>
+                <td class="cart-button">
+                    <img src="cart.png" alt="Add to cart">
+                </td>
+            </tr>
+
+            <!-- CIVIL Section -->
+            <tr>
+                <td rowspan="2">CIVIL</td>
+                <td><img src="java.webp" alt="Java" class="book-image"></td>
+                <td class="book-info">
+                    <strong></italic>Book:</strong> Java <br>
+                    <strong>Author:</strong> Swati Saxena<br>
+                    <strong>Publication:</strong> BPB Publication
+                </td>
+                <td>$35.5</td>
+                <td class="cart-button">
+                    <img src="cart.png" alt="Add to cart">
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="html.jpg" alt="HTML in 24 Hours" class="book-image"></td>
+                <td class="book-info">
+                    <strong>Book:</strong> HTML in 24 Hours<br>
+                    <strong>Author:</strong> Sam Peter<br>
+                    <strong>Publication:</strong> Samp Publication
+                </td>
+                <td>$50</td>
+                <td class="cart-button">
+                    <img src="cart.png" alt="Add to cart">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
