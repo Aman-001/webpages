@@ -94,3 +94,11 @@ body {
 .nav-table a:hover {
     color: red;
 }
+
+footer {
+        position: fixed;
+        bottom: 0;
+        width: 110%;
+        background-color: #e6c7be;
+        text-align: center; 
+}
